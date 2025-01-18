@@ -1,0 +1,23 @@
+[{
+    "01": {
+      "firstName": "Sierra",
+      "lastName": "Everett",
+      "email": "sierraeverett@fakemail.com",
+      "favoriteColor": "Green",
+      "birthday": "10-06-99"
+    },
+    "02": {
+      "firstName": "Savannah",
+      "lastName": "Everett",
+      "email": "savannaheverett@fakemail.com",
+      "favoriteColor": "Pink",
+      "birthday": "07-07-22"
+    },
+    "03": {
+      "firstName": "Elijah",
+      "lastName": "Everett",
+      "email": "elijaheverett@fakemail.com",
+      "favoriteColor": "Green",
+      "birthday": "06-04-24"
+    }
+  }]

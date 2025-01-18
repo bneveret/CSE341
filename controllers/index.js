@@ -1,4 +1,11 @@
-const printName = (req, res, next) => {
-    res.json('Sierra Everett');
+const mongodb = require('../db/connect');
+
+const getData = async (req, res, next) => {
+  const result = await mongodb.getDb().db().collection('filename goes here').find();
+  result.toArray().then((lists) => {
+    res.setHeader('Content-Type', 'application/json');
+    res.status(200).json(lists[0]);
+  });
 };
-module.exports = { printName};
+
+module.exports = { getData };

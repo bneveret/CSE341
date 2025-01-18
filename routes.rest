@@ -1,0 +1,22 @@
+GET http://localhost:8080/contacts HTTP/1.1
+
+###
+GET http://localhost:8080/contacts/678bed272fdc945cd68c442d HTTP/1.1
+
+###
+GET http://localhost:8080/contacts/678bed322fdc945cd68c442e HTTP/1.1
+
+###
+GET http://localhost:8080/contacts/678bed3c2fdc945cd68c442f HTTP/1.1
+
+###
+GET http://cse341-everett.onrender.com/contacts HTTP/1.1
+
+###
+GET http://cse341-everett.onrender.com/contacts/678bed272fdc945cd68c442d HTTP/1.1
+
+###
+GET http://cse341-everett.onrender.com/contacts/678bed322fdc945cd68c442e HTTP/1.1
+
+###
+GET http://cse341-everett.onrender.com/contacts/678bed3c2fdc945cd68c442f HTTP/1.1
