@@ -13,6 +13,36 @@ GET http://localhost:8080/contacts/678bed322fdc945cd68c442e HTTP/1.1
 GET http://localhost:8080/contacts/678bed3c2fdc945cd68c442f HTTP/1.1
 
 ###
+POST http://localhost:8080/contacts HTTP/1.1
+Content-type: application/json
+
+{
+    "firstName":"Sierra",
+    "lastName":"Everett",
+    "email":"sierraeverett.com",
+    "favoriteColor":"Green",
+    "birthday":"10/06/99"
+}
+
+###
+PUT http://localhost:8080/contacts/678bed272fdc945cd68c442d HTTP/1.1
+Content-type: application/json
+
+
+{
+    "firstName":"John",
+    "lastName":"Doe",
+    "email":"johndoe@fakemail.com",
+    "favoriteColor":"Beige",
+    "birthday":"05/06/05"
+}
+
+###
+DELETE http://localhost:8080/contacts/6795659d87f21d7c180546af HTTP/1.1
+
+###
+GET http://cse341-everett.onrender.com HTTP/1.1
+###
 GET http://cse341-everett.onrender.com/contacts HTTP/1.1
 
 ###
@@ -23,3 +53,30 @@ GET http://cse341-everett.onrender.com/contacts/678bed322fdc945cd68c442e HTTP/1.
 
 ###
 GET http://cse341-everett.onrender.com/contacts/678bed3c2fdc945cd68c442f HTTP/1.1
+
+###
+POST http://cse341-everett.onrender.com/contacts HTTP/1.1
+Content-type: application/json
+
+{
+    "firstName":"John",
+    "lastName":"Doe",
+    "email":"jond@fakemail.com",
+    "favoriteColor":"Grey",
+    "birthday":"01/01/01"
+}
+
+###
+PUT http://cse341-everett.onrender.com/contacts/678bed272fdc945cd68c442d HTTP/1.1
+Content-type: application/json
+
+{
+    "firstName":"Sierra",
+    "lastName":"Everett",
+    "email":"sierraeverett.com",
+    "favoriteColor":"Green",
+    "birthday":"10/06/99"
+}
+
+###
+DELETE http://cse341-everett.onrender.com/contacts/6795659d87f21d7c180546af HTTP/1.1
