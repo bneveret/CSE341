@@ -60,7 +60,7 @@ Content-type: application/json
 {
     "firstName":"John",
     "lastName":"Doe",
-    "email":"jond@fakemail.com",
+    "email":"johndoe@fakemail.com",
     "favoriteColor":"Grey",
     "birthday":"01/01/01"
 }
