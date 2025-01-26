@@ -17,28 +17,27 @@ POST http://localhost:8080/contacts HTTP/1.1
 Content-type: application/json
 
 {
+    "firstName":"Savannah",
+    "lastName":"Everett",
+    "email":"savannaheverett@fakemail.com",
+    "favoriteColor":"Pink",
+    "birthday":"07/07/22"
+}
+
+###
+PUT http://localhost:8080/contacts/6795c950615ace0c4ebb3d52 HTTP/1.1
+Content-type: application/json
+
+{
     "firstName":"Sierra",
     "lastName":"Everett",
-    "email":"sierraeverett.com",
+    "email":"sierraeverett@fakemail.com",
     "favoriteColor":"Green",
     "birthday":"10/06/99"
 }
 
 ###
-PUT http://localhost:8080/contacts/678bed272fdc945cd68c442d HTTP/1.1
-Content-type: application/json
-
-
-{
-    "firstName":"John",
-    "lastName":"Doe",
-    "email":"johndoe@fakemail.com",
-    "favoriteColor":"Beige",
-    "birthday":"05/06/05"
-}
-
-###
-DELETE http://localhost:8080/contacts/6795659d87f21d7c180546af HTTP/1.1
+DELETE http://localhost:8080/contacts/6795cbd60ef73d060ce6a832 HTTP/1.1
 
 ###
 GET http://cse341-everett.onrender.com HTTP/1.1

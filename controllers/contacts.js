@@ -1,5 +1,5 @@
 const mongodb = require('../db/connect');
-const {ObjectId} = require('mongodb').ObjectId;
+const {ObjectId} = require('mongodb');
 
 const getContact = async (req, res) => {
   const userId = new ObjectId(req.params.id);
@@ -61,11 +61,12 @@ const updateContact = async (req, res) => {
 };
 
 const deleteContact = async (req, res) => {
+  const userId = new ObjectId(req.params.id);
   const response = await mongodb
-  .getDb()
-  .db()
-  .collection('contacts')
-  .deleteOne( req.body._id );
+    .getDb()
+    .db()
+    .collection('contacts')
+    .deleteOne({ _id: userId });
   console.log(response);
   if (response.deletedCount > 0) {
     res.status(200).send();
